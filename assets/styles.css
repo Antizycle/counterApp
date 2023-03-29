@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-family: 'Oxanium', monospace;
+  font-size: 2.5rem;
+  color: orangered;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+body {
+  background-color: #151012;
+  color: orangered;
+  font-family: 'Oxanium', monospace;
+  font-size: 1rem;
+}
+
+button, input {
+  /* height: min-content; */
+  padding: .5em .5em;
+  background-color: #301515;
+  border: 1px solid orangered;
+  color: orangered;
+  font-size: .9rem;
+}
+
+button {
+  transform-origin: top left;
+  transition: 50ms ease-in-out;
+}
+
+input:focus {
+  outline: transparent;
+  background-color: #201010;
+  box-shadow: 0 0 5px 5px #301515;
+}
+
+button:focus {
+  outline: transparent;
+}
+
+button:active {
+  transform: translate(1px, 1px);
+}
+
+.container {
+  width: 100%;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.header, .main {
+  width: 100%;
+  padding: 1rem min(2rem, 10vw);
+  margin-bottom: 2rem;
+}
+
+.main__new-counter-label {
+  display: block;
+}
+
+.main__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main__new-counter-label-input {
+  width: 79%;
+}
+
+.main__new-counter-add {
+  width: 20%
+}
+
+#but-cont {
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border: 1px solid orangered;
+}
+
+.counter__wrapper {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.counter__label {
+  color: orangered;
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.counter__btn {
+ width: 63%;
+}
+
+.counter__btn--reset {
+  width: 20%;
+ }
+
+ .counter__btn--delete {
+  background-color: #151010;
+  color: red;
+  border: 1px solid red;
+  width: 15%;
+ }
+
+.footer {
+  position: fixed;
+  left: 50%;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+  padding: 0.2rem 0.3rem;
+  color: #daf0fa;
+  background-color: #101520;
+  font-size: 0.6rem;
+  white-space: nowrap;
+  transform: translateX(-50%);
+  bottom: 0;
+  border-radius: 0.3rem 0.3rem 0 0;
+}

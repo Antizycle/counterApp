@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/favicon.svg" />
+  <title>Counter App</title>
+  <link rel="stylesheet" href="./assets/styles.css" />
+</head>
+<body>
+  <header class="header ">
+    <div class="container">
+      <h1 class="header__title">Counter App</h1>
+      <p class="header__text">
+        Type a label and press add to create a New Counter. Each counter works independently and can be reset by pressing on 'C' button next to it. Or deleted by pressing 'X' button.
+        Currently there is no limit to the amount of counters you can have (subject to change).
+      </p>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <label for="add-button-label" class="main__new-counter-label" >
+        Input button label: 
+      </label>
+      <div class="main__wrapper">
+        <input name="add-button-label"
+               id="addButtonLabel"
+               title="New Counter Label"
+               placeholder="Input counter label"
+               class="main__new-counter-label-input"
+               />
+        <button id="addButton" title="Add a New Counter"  class="main__new-counter-add"> > ADD </button>
+      </div>
+      <div id="but-cont">
+        Your counters will appear here...
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    2023 / by Antizycle
+  </footer>
+  <script src="./assets/main.js"></script>
+</body>
+</html>
+
